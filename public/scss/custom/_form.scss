@@ -1,0 +1,19 @@
+.custom-checkbox .custom-control-label::before,
+.custom-checkbox .custom-control-label::after,
+.custom-radio .custom-control-label::before,
+.custom-radio .custom-control-label::after,
+.custom-switch .custom-control-label::before,
+.custom-switch .custom-control-label::after {
+  top: 50%;
+}
+
+.filter-scroll-y {
+  max-height: 15em;
+  overflow-y: auto;
+  overflow-x: none;
+}
+.filter-scroll-y::-webkit-scrollbar { width: 4px; height: 4px }
+.filter-scroll-y::-webkit-scrollbar-button { width: 0; height: 0 }
+.filter-scroll-y::-webkit-scrollbar-thumb { background: rgba(0,0,0,.2); border: 0; border-radius: 100px }
+.filter-scroll-y::-webkit-scrollbar-track { background: rgba(0,0,0,.1); border: 0; border-radius: 100px }
+.filter-scroll-y::-webkit-scrollbar-corner { background: transparent }

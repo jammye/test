@@ -1,0 +1,82 @@
+.content-body {
+  height: auto;
+  padding: 50px;
+}
+
+.btn-disabled {
+  color: #ddd;
+  border-color: #ddd;
+}
+
+.btn-remove {
+  border-color: #b0413e;
+}
+
+.btn-remove:hover {
+  color: #fff;
+  background-color: #b0413e;
+  border-color: #b0413e;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-blue {
+  border-color: #0168fa;
+}
+
+.blue, .btn-blue, .color-blue {
+  color: #0168fa;
+}
+
+.btn-remove, .color-red {
+  color: #b0413e;
+}
+
+.color-green {
+  color: #10b759;
+}
+
+.color-gray {
+  color: #7987a1;
+}
+
+.bin-wizi {
+  border-color: #a4c445;
+  color: #fff;
+  background-image: url("../img/wizi.svg");
+  background-repeat: no-repeat;
+  background-color: #a4c445;
+  background-size: auto 26px;
+  background-position: 7px center;
+}
+
+.bin-wizi:hover {
+  border-color: #87a234;
+  color: #fff;
+  background-color: #87a234;
+}
+
+.btn-wizi { background-color: #9FC53A; color: white !important }
+.btn-wizi:hover { background-color: #93b535 }
+
+.wizi-button {
+  padding: 20px 0 20px 45px;
+  width: 250px;
+  border-radius: 3px;
+}
+
+.wizi-button:hover {
+}
+
+.wizi-button span {
+  display: inline-block;
+  max-width: 280px;
+  width: 100%;
+  text-align: center;
+  height: 19px;
+  line-height: 1.1875rem;
+  color: white;
+  font-weight: 900;
+}

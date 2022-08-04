@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Meta -->
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <title>{% block meta_title %}{% endblock %}</title>
+
+    <!-- Vendor CSS -->
+    <link href="{{ asset('lib/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/theme/dashforge.css') }}">
+    {% block theme %}<link rel="stylesheet" href="{{ asset('assets/css/theme/skins/charcoal.css') }}">{% endblock %}
+    {% block stylesheets %}{% endblock %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}">
+</head>
+<body class="page-profile">
+
+<header class="navbar navbar-header navbar-header-fixed">
+    <a class="d-flex h-100 align-items-center pd-l-20" style="color: #fff;" href="{{ path('public.index') }}">TEST Wizishop</a>
+</header>
+
+<div class="content {{ content_no_padding_bottom is defined and content_no_padding_bottom == true ? 'pb-0' }}">
+    {% block body %}{% endblock %}
+</div>
+
+<footer class="footer">
+    <div>
+        <span>
+            Guillaume DEVELTER, Le 04/08/2022
+        </span>
+    </div>
+</footer>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog"></div>
+
+<script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
+<script src="{{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('lib/feather-icons/feather.min.js') }}"></script>
+<script src="{{ asset('lib/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+<script src="{{ asset('assets/js/dashforge.js') }}"></script>
+
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+</script>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

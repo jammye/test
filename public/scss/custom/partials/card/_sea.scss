@@ -1,0 +1,54 @@
+.card-sea {
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+
+  &-catchline {
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-btn {
+    margin-top: 1em;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  &--google-a { background-color: #E9F3FF; padding-right: 42% }
+  &--google-shopping { background-color: #f5f5f5; padding-left: 44% }
+  &--facebook { background-color: #000; padding-right: 42% }
+  &--instagram { background: linear-gradient(to bottom, #F3010B, #CE0091); padding-left: 44% }
+
+  &--google-a .card-sea-catchline { color: #7C98B6 }
+  &--google-a .card-sea-catchline strong { color: #0073FB }
+  &--google-a .card-sea-catchline { color: black }
+  &--facebook .card-sea-catchline,
+  &--instagram .card-sea-catchline { color: white }
+
+  &--google-a .card-sea-btn { color: white; background-color: #0073FB }
+  &--google-shopping .card-sea-btn { color: #EE5D4F; background-color: rgba(238,93,79,.15) }
+  &--facebook .card-sea-btn,
+  &--instagram .card-sea-btn { color: white; background-color: rgba(255,255,255,.25) }
+
+  &--google-a .card-sea-btn:hover { color: #0073FB; background-color: white }
+  &--google-shopping .card-sea-btn:hover { color: white; background-color: #EE5D4F }
+  &--facebook .card-sea-btn:hover { background-color: #3b5998; color: white }
+  &--instagram .card-sea-btn:hover { background-color: white; color: #F3010B }
+
+  &--google-a .card-sea-bg { background-size: auto 90%; background-position: 138% 100% }
+  &--google-shopping .card-sea-bg { background-size: auto 98%; background-position: -146% 630%; }
+  &--facebook .card-sea-bg { background-size: auto 90%; background-position: 100% 100% }
+  &--instagram .card-sea-bg { background-size: auto 140%; background-position: 465% -12% }
+}

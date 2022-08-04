@@ -1,0 +1,67 @@
+/*
+Error: File to import not found or unreadable: ../../node_modules/bootstrap/scss/functions.
+       Load paths:
+         Compass::SpriteImporter
+         /Users/Antony/Projects/29ter-modules/public/scss
+         /usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets
+        on line 18 of /Users/Antony/Projects/29ter-modules/public/scss/pages/mail.scss
+
+13: // Mixins
+14: @import "../mixins";
+15: @import "../bootstrap/mixins";
+16: 
+17: // Bootsrap
+18: @import "../../node_modules/bootstrap/scss/functions";
+19: @import "../../node_modules/bootstrap/scss/variables";
+20: @import "../../node_modules/bootstrap/scss/mixins";
+21: 
+22: // Local variable
+23: $mail-sidebar-width:      $width-sidebar - 20px;
+
+Backtrace:
+/Users/Antony/Projects/29ter-modules/public/scss/pages/mail.scss:18
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/usr/local/lib/ruby/gems/2.4.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../../node_modules/bootstrap/scss/functions.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/Antony/Projects/29ter-modules/public/scss\A          /usr/local/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets\A         on line 18 of /Users/Antony/Projects/29ter-modules/public/scss/pages/mail.scss\A \A 13: // Mixins\A 14: @import \"../mixins\";\A 15: @import \"../bootstrap/mixins\";\A 16: \A 17: // Bootsrap\A 18: @import \"../../node_modules/bootstrap/scss/functions\";\A 19: @import \"../../node_modules/bootstrap/scss/variables\";\A 20: @import \"../../node_modules/bootstrap/scss/mixins\";\A 21: \A 22: // Local variable\A 23: $mail-sidebar-width:      $width-sidebar - 20px;"; }

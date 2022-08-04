@@ -1,0 +1,65 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+    <section>
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="mb-3">
+                        Produits
+                    </h4>
+
+                        <div class="container m-0">
+                            <div class="row">
+                                {% for product in products %}
+                                <div class="col-4">
+                                    <div class="card card-body mt-4 border-0 bg-gray-100 mb-1 mr-1">
+                                        <strong>{{ product.title }}</strong><br>
+                                        Stock : {{ product.stock }}<br>
+                                        {{ product.priceFormat }}
+                                        <a href="{{ path('cart.add', {id: product.id}) }}" class="btn btn-block btn-primary mt-2">Ajouter au panier</a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="mb-3">
+                        Panier
+                    </h4>
+
+                    {% for message in app.flashes('danger') %}
+                        <div class="alert alert-danger" role="alert">{{ message }}</div>
+                    {% endfor %}
+
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success" role="alert">{{ message }}</div>
+                    {% endfor %}
+
+                    <div class="card card-body mt-4 border-0 bg-gray-100 mb-2">
+                        {% if cart.cartProducts|length > 0 %}
+                            {% for detail in cart.cartProducts %}
+                                <div class="col mb-2">
+                                    <a href="{{ path('cart.remove', {id: detail.product.id}) }}" class="btn btn-primary">-</a>
+                                    {{ detail.quantity }}
+                                    <a href="{{ path('cart.add', {id: detail.product.id}) }}" class="btn btn-primary">+</a>
+                                    {{ detail.product.title }}, <strong>PU :</strong> {{ detail.product.priceFormat }}, , <strong>PT :</strong> {{ detail.priceFormat }}
+                                    <span class="float-right"><a href="{{ path('cart.trash', {id: detail.product.id}) }}"><i data-feather="trash"></i></a></span>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            Panier vide
+                        {% endif %}
+                    </div>
+                    {% if cart.cartProducts|length > 0 %}
+                        <div class="card card-body mt-4 border-0 bg-gray-100">
+                            Total HT : {{ cart.totalHTFormat }}<br>
+                            Total TVA : {{ cart.totalTVAFormat }}<br>
+                            Total : {{ cart.totalTTCFormat }}<br>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+    </section>
+{% endblock %}

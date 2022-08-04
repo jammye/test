@@ -1,0 +1,16 @@
+.badge-beta {
+  $color: red;
+  &.normal { --size: .6em }
+  &.small { --size: .43em }
+  background-color: rgba($color,.1);
+  color: $color;
+  text-transform: uppercase;
+  font-size: var(--size);
+  padding: calc(var(--size) / 3) calc(var(--size) / 1.5);
+  border-radius: 3px;
+  margin-left: calc(var(--size) * .8);
+  font-weight: 600;
+  letter-spacing: .025em;
+  transform: translateY(-.5em);
+  display: inline-block;
+}

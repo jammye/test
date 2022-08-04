@@ -1,0 +1,15 @@
+:root {
+  --footer-height: 50px;
+}
+
+footer { height: var(--footer-height) }
+
+header { height: #{$height-header-mobile} }
+header + .content { margin-top: #{$height-header-mobile} }
+.content { min-height: calc(100vh - #{$height-header-mobile} - var(--footer-height)) }
+
+@include media-breakpoint-up(lg) {
+  header { height: #{$height-header} }
+  header + .content { margin-top: #{$height-header} }
+  .content { min-height: calc(100vh - #{$height-header} - var(--footer-height)) }
+}

@@ -1,0 +1,67 @@
+.card-import {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &-count {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-number {
+      font-size: 26px;
+      font-weight: 300;
+      color: $gray-400;
+      &:last-of-type {
+        color: $primary;
+        font-weight: 500;
+      }
+    }
+
+    &-icon {
+      $size: 26px;
+      width: $size;
+      height: $size;
+      border-radius: 100%;
+      background-color: rgba($primary,.1);
+      color: $primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 $size;
+
+      svg {
+        width: round($size*.7);
+        height: round($size*.7);
+      }
+    }
+  }
+
+  &-type {
+    $size: 16px;
+    font-size: $size;
+    margin-top: 1em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: $size;
+      height: $size;
+      color: $gray-400;
+      margin-right: $size*.5;
+    }
+  }
+
+  &-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 !important;
+    height: 6px;
+    border-radius: 0;
+  }
+}
